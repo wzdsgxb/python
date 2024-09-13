@@ -4,7 +4,7 @@
 
 ### Debugging Tips
 
-So, you're program has crashed...
+So, your program has crashed...
 
 ```bash
 bash % python3 blah.py
@@ -147,7 +147,7 @@ For breakpoints location is one of the following.
 
 ```code
 (Pdb) b 45            # Line 45 in current file
-(Pdb) b file.py:45    # Line 34 in file.py
+(Pdb) b file.py:45    # Line 45 in file.py
 (Pdb) b foo           # Function foo() in current file
 (Pdb) b module.foo    # Function foo() in a module
 ```

@@ -209,7 +209,7 @@ of the function, it's better to use a class instead (more on this later).
 
 When you call a function, the argument variables are names that refer
 to the passed values. These values are NOT copies (see [section
-2.7](../02_Working_with_data/07_Objects)). If mutable data types are
+2.7](../02_Working_with_data/07_Objects.md)). If mutable data types are
 passed (e.g. lists, dicts), they can be modified *in-place*.
 
 ```python
@@ -267,7 +267,7 @@ If you were doing a lot of file parsing for real, you’d probably want
 to clean some of this up and make it more general purpose.  That's
 our goal.
 
-Start this exercise by creating a new file called
+Start this exercise by opening the file called
 `Work/fileparse.py`. This is where we will be doing our work.
 
 ### Exercise 3.3: Reading CSV Files
@@ -332,13 +332,13 @@ follows:
 [{'price': '32.20', 'name': 'AA', 'shares': '100'}, {'price': '91.10', 'name': 'IBM', 'shares': '50'}, {'price': '83.44', 'name': 'CAT', 'shares': '150'}, {'price': '51.23', 'name': 'MSFT', 'shares': '200'}, {'price': '40.37', 'name': 'GE', 'shares': '95'}, {'price': '65.10', 'name': 'MSFT', 'shares': '50'}, {'price': '70.44', 'name': 'IBM', 'shares': '100'}]
 
 >>> # Read only some of the data
->>> shares_held = parse_csv('portfolio.csv', select=['name','shares'])
+>>> shares_held = parse_csv('Data/portfolio.csv', select=['name','shares'])
 >>> shares_held
 [{'name': 'AA', 'shares': '100'}, {'name': 'IBM', 'shares': '50'}, {'name': 'CAT', 'shares': '150'}, {'name': 'MSFT', 'shares': '200'}, {'name': 'GE', 'shares': '95'}, {'name': 'MSFT', 'shares': '50'}, {'name': 'IBM', 'shares': '100'}]
 >>>
 ```
 
-An example of a column selector was given in [Exercise 2.23](../02_Working_with_data/06_List_comprehension).
+An example of a column selector was given in [Exercise 2.23](../02_Working_with_data/06_List_comprehension.md).
 However, here’s one way to do it:
 
 ```python
@@ -431,7 +431,7 @@ type-conversions to be applied to the returned data.  For example:
 >>>
 ```
 
-You already explored this in [Exercise 2.24](../02_Working_with_data/07_Objects).
+You already explored this in [Exercise 2.24](../02_Working_with_data/07_Objects.md).
 You'll need to insert the following fragment of code into your solution:
 
 ```python
@@ -469,7 +469,7 @@ line of data isn’t interpreted as a header line.  Also, you’ll need to
 make sure you don’t create dictionaries as there are no longer any
 column names to use for keys.
 
-### Exercise 3.7: Picking a different column delimitier
+### Exercise 3.7: Picking a different column delimiter
 
 Although CSV files are pretty common, it’s also possible that you
 could encounter a file that uses a different column separator such as
